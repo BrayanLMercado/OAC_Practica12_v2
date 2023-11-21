@@ -11,10 +11,10 @@ int main(){
         writeTag();
         int* cadena=gets(pcad);
         int num= atoi(cadena);
-        printf("Salida En Terminal De PrintDec:\n");
-        printDec(num);
-        printf("\nSalida En Terminal De PrintHex:\n");
+        printf("Salida En Terminal De PrintHex:\n");
         printHex(num);
+        printf("\nSalida En Terminal De PrintDec:\n");
+        printDec(num);
         printf("\n");
         printf("\n");
     }
