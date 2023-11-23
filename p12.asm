@@ -20,15 +20,18 @@ Main proc
     mov al,PTOs_all_Out
     call outportC
     mov dx,PC
-    mov al,07Eh
+    mov al,0A7h
     call printBin8
     call outportC
     call newLine
     call delay
-    mov cl,4
+    mov cl,5
+    ;call setBit
+    ;call clearBit
+    ;call notBit
     ;call setBitPort
-    call clearBitPort
-    ;call notBitPort
+    ;call clearBitPort
+    call notBitPort
     call newLine
     call delay
     jmp start
@@ -138,8 +141,8 @@ mov cx,0ffffh
     loop .delay
 pop cx
 ret
-
 endp
+
 printBin proc
 push ax
 push dx
